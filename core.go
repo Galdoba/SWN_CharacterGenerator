@@ -68,7 +68,7 @@ func InputString(descr ...string) string {
 	}
 	bt := []byte(dataVal)
 	if len(bt) > 1 {
-		fmt.Println(bt)
+		//fmt.Println(bt)
 		bt = bt[:len(bt)-2]
 	}
 	if len(bt) > 0 {
@@ -225,4 +225,8 @@ func getRandomFromSliceStr(sl []string) string {
 		return "Null"
 	}
 	return sl[randInt(0, l-1)]
+}
+
+func int2Str(i int) string {
+	return strconv.Itoa(i)
 }
