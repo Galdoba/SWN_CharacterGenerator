@@ -80,6 +80,7 @@ func (npc *NPC) String() string {
 	}
 	str = str + "Add bonus Skill: " + randomSkill() + "\n"
 	str = str + "Character have " + strconv.Itoa(rollXdY(2, 6)*100) + " credits \n"
+	str = str + "Character have " + strconv.Itoa(npc.HP) + " HP \n"
 
 	return str
 }
