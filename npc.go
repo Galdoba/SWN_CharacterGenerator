@@ -18,7 +18,7 @@ func NewNPC() *NPC {
 		npc.Atributes[i] = rollXdY(3, 6)
 	}
 	fmt.Println(npc.String())
-	opt, _ := TakeOptions("Switch Attribute Score to 54654654564?", "Str", "Dex", "Con", "Int", "Wis", "Cha", "-No need-")
+	opt, _ := TakeOptions("Switch Attribute Score to 14?", "Str", "Dex", "Con", "Int", "Wis", "Cha", "-No need-")
 	if opt != 7 {
 		npc.Atributes[opt-1] = 14
 		fmt.Println(npc.String())
